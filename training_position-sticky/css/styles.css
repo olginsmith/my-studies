@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  margin: 30px;
+}
+
+section {
+  margin: 0px 30px 80px 30px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table.home .description {
+  width: 75%;
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+table.home .picture {
+  width: 25%;
+  vertical-align: top;
+}
+
+figure {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+section#about,
+section#projects {
+  background-color: rgb(178, 223, 250);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 30px;
+}
+
+table.services .picture {
+  width: 25%;
+  vertical-align: top;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+table.services .picture-last {
+  width: 25%;
+  vertical-align: top;
+  padding-right: 0px;
+}
+
+table.contacts .picture {
+  width: 25%;
+  vertical-align: top;
+  padding-right: 30px;
+}
+
+table.contacts .description {
+  width: 50%;
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+table.contacts .contact-data {
+  width: 25%;
+  vertical-align: top;
+}
+
+.contact-data>a {
+  display: block;
+}
+
+footer {
+  margin: 0px;
+  background-color: rgb(29, 168, 254);
+  padding: 30px;
+}
+
+table.footer>td {
+  width: 25%;
+}
