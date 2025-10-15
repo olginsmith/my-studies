@@ -1,24 +1,50 @@
+:root {
+  --text-color: black;
+  --text-accent: #4A69FF;
+  --main-color: white;
+  --accent-color: #7AB1FF;
+  --section-accent: #E5F0FF;
+
+}
+
 body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  background-color: var(--main-color);
 }
 
-h1,
-h2,
-h3,
+h1 {
+  margin: 0px 0px 60px;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0px 0px 30px;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 0px 0px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 p {
-  margin: 0px;
+  margin: 0px 0px 15px;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
 
 a:visited {
-  color: black;
+  color: var(--text-color);
 }
 
 a:hover {
@@ -26,11 +52,23 @@ a:hover {
 }
 
 header {
-  margin: 30px;
+  margin: 0px;
+  padding: 20px 30px;
+  text-align: center;
+  background-color: var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 9998;
+}
+
+nav a {
+  padding: 0px 30px;
 }
 
 section {
-  margin: 0px 30px 80px 30px;
+  margin: 0px 0px 90px;
+  padding: 90px 30px;
+  background-color: var(--main-color);
 }
 
 table {
@@ -53,17 +91,29 @@ figure {
   margin: 0px;
 }
 
+figcaption {
+  font-size: 12px;
+}
+
 img {
   width: 100%;
   border-radius: 12px;
 }
 
+a.top {
+  position: fixed;
+  top: 80%;
+  right: 3%;
+  padding: 10px 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  z-index: 9999;
+}
+
 section#about,
 section#projects {
-  background-color: rgb(178, 223, 250);
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 30px;
+  background-color: var(--section-accent);
 }
 
 table.services .picture {
@@ -96,16 +146,34 @@ table.contacts .contact-data {
   vertical-align: top;
 }
 
-.contact-data>a {
+table.contacts .description p {
+  margin-bottom: 90px;
+}
+
+table.contacts .description a {
   display: block;
+  margin-bottom: 30px;
+}
+
+
+table.contacts .email,
+table.contacts .phone {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 footer {
   margin: 0px;
-  background-color: rgb(29, 168, 254);
+  background-color: var(--accent-color);
   padding: 30px;
 }
 
-table.footer>td {
+table.footer td {
   width: 25%;
+  vertical-align: middle;
+}
+
+table.footer .company {
+  text-transform: uppercase;
+  font-weight: 600;
 }
