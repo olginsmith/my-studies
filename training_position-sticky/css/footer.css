@@ -1,0 +1,15 @@
+footer {
+  margin: 0px;
+  padding: 30px;
+  background-color: var(--section-accent);
+}
+
+footer table td {
+  width: 25%;
+  vertical-align: middle;
+}
+
+td.company {
+  text-transform: uppercase;
+  font-weight: 600;
+}

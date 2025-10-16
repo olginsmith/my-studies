@@ -1,0 +1,29 @@
+header {
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 15px;
+  padding: 10px 30px;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
+}
+
+nav ul li:hover,
+nav ul li:active {
+  background-color: var(--accent-color);
+  font-weight: 600;
+}

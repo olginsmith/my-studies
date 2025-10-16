@@ -1,0 +1,96 @@
+section {
+  margin: 0px;
+  padding: 120px 30px;
+  background-color: var(--main-color);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table.home td {
+  width: 25%;
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+figure {
+  margin: 0px;
+}
+
+figcaption {
+  font-size: 12px;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+section#about,
+section#projects {
+  background-color: var(--section-accent);
+}
+
+table.about td {
+  width: 25%;
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+table.services td {
+  width: 25%;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+
+table.services td.last-row {
+  padding-bottom: 0px;
+}
+
+table.services td.last-column {
+  padding-right: 0px;
+}
+
+table.projects td {
+  width: 50%;
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+table.projects figure {
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+table.projects p {
+  clear: right;
+}
+
+table.contacts td {
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+table.contacts td.picture {
+  width: 25%;
+}
+
+table.contacts td.description {
+  width: 50%;
+}
+
+table.contacts td.contacts {
+  width: 25%;
+}
+
+table.contacts a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}

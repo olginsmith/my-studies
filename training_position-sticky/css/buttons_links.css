@@ -1,0 +1,26 @@
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+a.top {
+  position: fixed;
+  bottom: 105px;
+  right: 15px;
+  padding: 10px 30px;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
+  z-index: 999;
+}
+
+a.top:hover,
+a.top:active {
+  background-color: var(--accent-color);
+  font-weight: 600;
+}
