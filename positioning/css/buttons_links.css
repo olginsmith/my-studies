@@ -10,13 +10,18 @@ a:visited {
 
 a.top {
   position: fixed;
-  bottom: 105px;
-  right: 15px;
-  padding: 10px 30px;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 12px 10px 4px;
+  font-size: 20px;
   border: 1px solid var(--text-color);
   border-radius: 20px;
   background-color: var(--main-color);
-  z-index: 999;
+  text-align: center;
+  cursor: pointer;
+  z-index: 300;
 }
 
 a.top:hover,
