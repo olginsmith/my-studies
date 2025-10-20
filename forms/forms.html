@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формы</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Вход или регистрация</h1>
+  </header>
+
+  <section id="sign-in">
+    <h2>Войти</h2>
+    <form action="#" name="sign-in">
+      <table>
+        <tbody>
+          <tr>
+            <td><label>Логин:</label></td>
+            <td><input type="email" name="login" required placeholder="name@example.ru" maxlength="80"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Введите логин от Вашего аккаунта">
+            </td>
+          </tr>
+          <tr>
+            <td><label>Пароль:</label></td>
+            <td><input type="password" name="password" required maxlength="80"
+                title="Введите пароль от вашего аккаунта"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button type="submit" name="submit-sign-in">Войти</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </section>
+
+  <section id="sign-up">
+    <h2>Зарегистрироваться</h2>
+    <form action="#" name="sign-up">
+      <table>
+        <tr>
+          <td colspan="2" class="headline">
+            <h3>Персональные данные</h3>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Имя:</label></td>
+          <td><input type="text" name="name" required minlength="1" maxlength="100" autocomplete="on"></td>
+        </tr>
+        <tr>
+          <td><label>Фамилия:</label></td>
+          <td><input type="text" name="surname" required minlength="1" maxlength="100" autocomplete="on"></td>
+        </tr>
+        <tr>
+          <td><label>Емейл:</label></td>
+          <td><input type="email" name="login" required maxlength="80" placeholder="name@example.ru" autocomplete="on"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></td>
+        </tr>
+        <tr>
+          <td><label>Пароль: </label></td>
+          <td><input type="password" name="password" required
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+              title="Минимум 8 символов, одна цифра, одна буква в верхнем регистре и одна в нижнем"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="headline-in-row">
+            <h3>Контактные данные</h3>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Страна:</label></td>
+          <td><input type="text" name="country" readonly placeholder="Российская Федерация"></td>
+        </tr>
+        <tr>
+          <td><label>Область:</label></td>
+          <td><input type="text" name="region" maxlength="120" autocomplete="on"></td>
+        </tr>
+        <tr>
+          <td><label>Индекс:</label></td>
+          <td><input type="text" name="zip" minlength="6" maxlength="6" autocomplete="on" pattern="[0-9]{6}"></td>
+        </tr>
+        <tr>
+          <td><label>Город:</label></td>
+          <td><input type="text" name="city" autocomplete="on"></td>
+        </tr>
+        <tr>
+          <td><label>Улица:</label></td>
+          <td><input type="text" name="street" autocomplete="on"></td>
+        </tr>
+        <tr>
+          <td><label>Дом:</label></td>
+          <td><input type="text" name="house" autocomplete="on" size="8"></td>
+        </tr>
+        <tr>
+          <td><label>Квартира/офис:</label></td>
+          <td><input type="text" name="office" autocomplete="on" size="8"></td>
+        </tr>
+        <tr>
+          <td><label>Телефон:</label></td>
+          <td><input type="tel" name="mobile" autocomplete="on" placeholder="+7 (XXX) XXX-XX-XX"
+              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="headline-in-row">
+            <h3>Анкетные данные</h3>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Дата рождения:</label></td>
+          <td><input type="date" name="birthday" min="1900-01-01"></td>
+        </tr>
+        <tr>
+          <td><label>Вам есть 18?</label></td>
+          <td>
+            <input type="radio" checked name="legal-age-yes">да
+            <input type="radio" name="legal-age-no">нет
+          </td>
+        </tr>
+        <tr>
+          <td><label>Как Вы о нас узнали?</label></td>
+          <td>
+            <select name="info-source">
+              <option value="" selected>Выберите одно значение</option>
+              <optgroup label="Баннер в поисковике">
+                <option value="11">yandex.ru</option>
+                <option value="12">mail.ru</option>
+                <option value="13">ramler.ru</option>
+              </optgroup>
+              <optgroup label="Печатное издание">
+                <option value="21">yandex.ru</option>
+                <option value="22">mail.ru</option>
+                <option value="23">ramler.ru</option>
+              </optgroup>
+              <optgroup label="Интернет-канал">
+                <option value="31">Путешествия LIVE</option>
+                <option value="32">История PRO</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="headline-in-row">
+            <h3>Комментарии</h3>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label></label>
+            <textarea name="comment" maxlength="300" rows="3" cols="42" wrap="hard"
+              placeholder="Оставьте Ваш комментарий (макс. 300 символов)"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="reset" name="reset-sign-up">Очистить форму</button></td>
+          <td><button type="submit" name="submit-sign-up">Зарегистрироваться</button></td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+</body>
+
+</html>
