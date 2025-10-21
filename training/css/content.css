@@ -1,0 +1,110 @@
+:root {
+  --main-color: #F2F8FD;
+  --main-color-middle: #B7D4FF;
+  --accent-color: #FFC11E;
+  --text-color: #030303;
+}
+
+body {
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+main.container {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  column-gap: 2vw;
+  row-gap: 4vw;
+  grid-template-areas:
+    "aside one"
+    "two two"
+    "three three"
+    "four four";
+  background-color: var(--main-color);
+}
+
+aside {
+  background-color: var(--accent-color);
+  grid-area: aside;
+  padding: 15px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+section#home {
+  grid-area: one;
+}
+
+section#services {
+  grid-area: two;
+}
+
+section#advantages {
+  grid-area: three;
+}
+
+section#history {
+  grid-area: four;
+}
+
+figure {
+  margin-bottom: 10px;
+}
+
+figure>img {
+  border-radius: 12px;
+}
+
+figure>figcaption {
+  font-size: 12px;
+}
+
+div.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1vw;
+
+  &>figure {
+    width: 20vw;
+    margin: 0px;
+  }
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2vw;
+}
+
+div.add-columns {
+  grid-template-columns: repeat(4, 1fr);
+}

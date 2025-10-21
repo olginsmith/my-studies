@@ -1,0 +1,24 @@
+header {
+  background-color: var(--main-color-middle);
+  width: 100vw;
+  padding: 1vw 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  border-radius: 0px 0px 12px 12px;
+  position: fixed;
+
+  &>nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+  }
+
+  &>nav>a {
+    display: inline-block;
+    color: var(--text-color);
+  }
+}
