@@ -9,7 +9,7 @@ header {
   flex-wrap: wrap;
   gap: 1vw;
   border-radius: 0px 0px 12px 12px;
-  position: fixed;
+  position: sticky;
 
   &>nav {
     display: flex;
@@ -19,6 +19,14 @@ header {
 
   &>nav>a {
     display: inline-block;
-    color: var(--text-color);
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: var(--button-color);
+  }
+
+  &>nav>a:hover {
+    font-weight: 600;
+    background-color: var(--accent-color);
   }
 }

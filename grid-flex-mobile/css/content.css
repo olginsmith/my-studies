@@ -3,12 +3,15 @@
   --main-color-middle: #B7D4FF;
   --accent-color: #FFC11E;
   --text-color: #030303;
+  --white: #FFFFFF;
+  --button-color: #7AB1FF;
 }
 
 body {
   font-family: "Roboto", Tahoma, sans-serif;
   font-size: 16px;
   color: var(--text-color);
+  background-color: var(--white);
 }
 
 h1 {
@@ -31,6 +34,10 @@ h3 {
 
 p {
   margin-bottom: 10px;
+}
+
+a {
+  color: var(--text-color);
 }
 
 main.container {
@@ -107,4 +114,27 @@ div.grid-container {
 
 div.add-columns {
   grid-template-columns: repeat(4, 1fr);
+}
+
+a.top {
+  position: fixed;
+  right: 1vw;
+  bottom: 10vh;
+  width: 40px;
+  height: 40px;
+  padding-top: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  background-color: var(--button-color);
+  text-align: center;
+  cursor: pointer;
+  z-index: 300;
+}
+
+a.top:hover,
+a.top:active {
+  background-color: var(--accent-color);
+  font-weight: 600;
 }
